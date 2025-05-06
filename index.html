@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Empresa</h1>
+      <nav class="space-x-4">
+        <a href="#servicios" class="hover:underline">Servicios</a>
+        <a href="#proyectos" class="hover:underline">Proyectos</a>
+        <a href="#sobre" class="hover:underline">Sobre nosotros</a>
+        <a href="#contacto" class="hover:underline">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-blue-600 text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Soluciones de Software a tu medida</h2>
+    <p class="text-lg mb-6">Desarrollo web y móvil | Mantenimiento | SaaS</p>
+    <a href="#contacto" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded hover:bg-gray-200">Contáctanos</a>
+  </section>
+
+  <section id="servicios" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-6 text-center">Servicios</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Desarrollo web y móvil personalizado</h4>
+          <p>Aplicaciones a medida según tus necesidades.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Mantenimiento y soporte</h4>
+          <p>Soporte técnico continuo para tus plataformas.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">SaaS</h4>
+          <p>Soluciones listas para usar con planes flexibles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="py-16">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-6 text-center">Proyectos Destacados</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Quickroom</h4>
+          <p>App web para estudiantes foráneos que buscan habitaciones cerca de su universidad.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Ecomarket</h4>
+          <p>Plataforma móvil y web para compra y venta de productos orgánicos e inorgánicos.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Labkey</h4>
+          <p>App móvil para reservar laboratorios tecnológicos en universidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h3 class="text-3xl font-bold mb-4">Sobre nosotros</h3>
+      <p class="text-lg mb-4">Somos un equipo de desarrollo apasionado por crear soluciones digitales que transformen negocios e instituciones. Trabajamos con tecnologías modernas como Laravel, Flutter, MySQL, JavaScript y más.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-16">
+    <div class="container mx-auto px-6 max-w-xl">
+      <h3 class="text-3xl font-bold mb-6 text-center">Contacto</h3>
+      <form action="https://formsubmit.co/danivh999@gmail.com" method="POST" class="bg-white p-6 rounded shadow">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Nombre</label>
+          <input type="text" name="name" required class="w-full border px-4 py-2 rounded">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Correo</label>
+          <input type="email" name="email" required class="w-full border px-4 py-2 rounded">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Mensaje</label>
+          <textarea name="message" rows="4" required class="w-full border px-4 py-2 rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-white py-4 text-center text-sm text-gray-500">
+    © 2025 Empresa. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
